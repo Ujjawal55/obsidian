@@ -1,6 +1,6 @@
 # Grep
 
-**Definition** : it stand for **'Global Regular Expression print'**.
+**Defination** : it stand for **'Global Regular Expression print'**.
 
 **Structure** : grep `<what to search for>` `<where to search for>`.
 
@@ -21,7 +21,7 @@
 
 # cat/head/tail/more/less
 
-**Definition** : this command help to view the content of the file.
+**Defination** : this command help to view the content of the file.
 
 **Structure** :
 
@@ -39,13 +39,13 @@
 
 # Pipe
 
-**Definition** : it pipe the output of the previously executed command to the input of the next command.
+**Defination** : it pipe the output of the previously executed command to the input of the next command.
 
 **Structure** : `<command1>`|`</command2`
 
 # pushd and popd
 
-**Definition** : pushd and popd works similar to the push and pop of stack data structure.
+**Defination** : pushd and popd works similar to the push and pop of stack data structure.
 
 > **pushd** : push the directory to the stack and.
 
@@ -59,7 +59,7 @@
 
 # Redirection operator
 
-**Definition** : help to redirect either the stdout/stdin/stderror
+**Defination** : help to redirect either the stdout/stdin/stderror
 
 **Structure** : `<content>` `<redirection-operator` `<location>`
 
@@ -79,7 +79,7 @@ ls -a > output.txt 2>&1 #this append the stdout and error(if any) to the output.
 
 # ls
 
-**Definition**: list all the content in the present directory.
+**Defination**: list all the content in the present directory.
 
 ### Flags/Additional
 
@@ -92,7 +92,7 @@ ls -a > output.txt 2>&1 #this append the stdout and error(if any) to the output.
 
 # find
 
-**Definition**: find a pattern in the specified directory and all of its sub-directories
+**Defination**: find a pattern in the specified directory and all of its sub-directories
 
 **Structure** : find `[path]` -name `[pattern]`
 
