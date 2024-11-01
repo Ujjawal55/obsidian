@@ -1,3 +1,7 @@
+# Recussion
+
+```python
+
 """
 problem statement is to find the minimum cost of matrix multiplication
 
@@ -49,3 +53,43 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
+
+# Top-Down Approach
+
+```python
+
+def mcm(arr, i, j, dp):
+
+    if i >= j:
+        return 0
+
+    if dp[i][j] != -1:
+        return dp[i][j]
+    min_cost = float("inf")
+
+    for k in range(i, j):
+        dp[i][j] = (
+            mcm(arr, i, k, dp) + mcm(arr, k + 1, j, dp) + (arr[i - 1] * arr[k] * arr[j])
+        )
+
+        if dp[i][j] < min_cost:
+            min_cost = dp[i][j]
+
+    return min_cost
+
+
+def main():
+    arr = [40, 20, 30, 10, 30]
+    min_cost = float("inf")
+
+    dp = [[-1 for _ in range(len(arr))] for _ in range(len(arr))]
+
+    min_cost = mcm(arr, 1, len(arr) - 1, dp)
+
+    print(f"The minimum cost is: {min_cost}")
+
+
+if __name__ == "__main__":
+    main()
+```
